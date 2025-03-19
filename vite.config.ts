@@ -93,6 +93,9 @@ export default defineConfig((config) => {
     build: {
       target: 'esnext',
     },
+    server: {
+      allowedHosts: ['bolt-diy-d710.onrender.com', 'all'], // Add your specific host or 'all' to allow any host
+    },
     plugins: [
       nodePolyfills({
         include: ['path', 'buffer', 'process'],
